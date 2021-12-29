@@ -1,5 +1,4 @@
 import sys
-from functools import reduce
 lines = sys.stdin.readlines()
 
 max = (0,0)
