@@ -7,9 +7,7 @@ def stdin_generator():
 
 
 def print_until_zero():
-    arr = stdin_generator()
-
-    for x in arr:
+    for x in stdin_generator():
         if (x==0): return
         print(x)
 
