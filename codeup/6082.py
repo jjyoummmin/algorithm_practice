@@ -1,3 +1,5 @@
+# 3 6 9 게임
+
 import re
 
 def clap(x):
