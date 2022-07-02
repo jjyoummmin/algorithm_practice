@@ -21,3 +21,9 @@ def gcd(a,b):
 def lcm(a,b):
     return a*b/gcd(a,b)
 ```
+
+2d-array
+--------
+```python
+arr = [[0] * w for _ in range(h)]
+```

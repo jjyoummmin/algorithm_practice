@@ -30,5 +30,3 @@ def solve(arr, bars):
     
 
 solve(arr, bars)  
-
-
