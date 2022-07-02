@@ -1,3 +1,5 @@
+# 바둑판 뒤집기
+
 arr = [[int(x) for x in input().split()] for _ in range(19)]
 n = int(input())
 coordinate = [[int(x)-1 for x in input().split()] for _ in range(n)]
@@ -21,4 +23,3 @@ def solve(arr, coordinate):
 
 
 solve(arr, coordinate)
-
