@@ -1,3 +1,5 @@
+# union find 기본 문제
+
 n, m = [int(x) for x in input().split()]
 edges = [[int(x) for x in input().split()] for _ in range(m)]
 
