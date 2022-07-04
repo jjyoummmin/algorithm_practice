@@ -21,9 +21,19 @@ def gcd(a,b):
 def lcm(a,b):
     return a*b/gcd(a,b)
 ```
-
 2d-array
 --------
 ```python
 arr = [[0] * w for _ in range(h)]
 ```
+
+walrus operator
+---------------
+python 3.8 부터 지원
+`:=` 대입 표현식
+
+```python
+if (n := len(a)) > 10:
+    print(f"List is too long ({n} elements, expected <= 10)")
+```
+
