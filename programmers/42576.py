@@ -19,10 +19,19 @@ def solution(participant, completion):
     return answer
 
 
+
 # 다른 사람 풀이 : collection 모듈 Counter 데이터 타입 활용
 from collections import Counter
 
 def solution(participant, completion):
     subtract = Counter(participant) - Counter(completion)
     return list(subtract)[0]
-    
+
+
+
+# ====================
+# [ 참고 ] Counter 클래스
+# ====================
+
+# https://docs.python.org/3/library/collections.html#collections.Counter
+
