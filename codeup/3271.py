@@ -1,3 +1,6 @@
+# 중립국 2
+# 일부 테스트케이스 통과 못함...
+
 def find(x):
     if parent[x] == x:
         return x
