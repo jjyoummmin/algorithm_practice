@@ -1,7 +1,9 @@
+# (hanoi(n-1)의 목적지를 3->2로 수정)
 # 2 <-> 3
 def pre_transform(n):
     return 2 if n==3 else (3 if n==2 else n)
 
+# (hanoi(n-1)의 출발지를 1->2로 수정)
 # 1 <-> 2
 def post_transform(n):
     return 1 if n==2 else (2 if n==1 else n)
@@ -18,6 +20,3 @@ def hanoi(end, n, acc):
 
 size = int(input())
 hanoi(size, 1, [])
-
-
-
