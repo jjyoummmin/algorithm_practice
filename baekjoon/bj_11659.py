@@ -1,3 +1,4 @@
+# 누적합 기초
 def cum_sum_generator(arr):
     acc = 0
     yield 0
