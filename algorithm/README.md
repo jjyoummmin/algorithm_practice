@@ -12,8 +12,8 @@
 
 
 ### 그래프 순회
-[DFS](dfs.md) 큐  
-[BFS](bfs.md) 스택/재귀
+[DFS](dfs.md) 스택/재귀  
+[BFS](bfs.md) 큐  
 
 
 최소비용
