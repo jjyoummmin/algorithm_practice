@@ -28,9 +28,9 @@ python에서 stack -> `list`, queue -> `deque` (popleft) 자료형 사용해서 
 
 |알고리즘| 비고 |음의 가중치|출발 노드|
 |------|----|----|----|
-|[다익스트라](dijkstras.md)       | bfs 사용 |x | single-source |
-|[벨만포드](bellman-ford.md)     |         |ok| single-source |
-|[플로이드 와샬](floydwarshall.md)|         |ok| all-source    |
+|[다익스트라](dijkstras.md)       | heapq 사용 |x | single-source |
+|[벨만포드](bellman-ford.md)     |           |ok| single-source |
+|[플로이드 와샬](floydwarshall.md)|           |ok| all-source    |
 
 * edge에 weight 없는 single-source 최단거리는 bfs로 풀수도 있음.
  
