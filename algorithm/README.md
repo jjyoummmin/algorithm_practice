@@ -1,6 +1,10 @@
 알고리즘/자료구조 정리
 =================
 
+스택/큐
+-----
+python에서 stack -> `list`, queue -> `deque` (popleft) 자료형 사용해서 구현할 것.
+
 그래프
 -----
 
@@ -24,7 +28,7 @@
 
 |알고리즘| 비고 |음의 가중치|출발 노드|
 |------|----|----|----|
-|[다익스트라](dijkstras.md)     | bfs 사용 |x | single-source |
+|[다익스트라](dijkstras.md)       | bfs 사용 |x | single-source |
 |[벨만포드](bellman-ford.md)     |         |ok| single-source |
 |[플로이드 와샬](floydwarshall.md)|         |ok| all-source    |
 

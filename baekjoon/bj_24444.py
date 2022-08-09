@@ -1,3 +1,6 @@
+# BFS 기본문제
+# 입력때문에 타임아웃 : sys.stdin.readline 사용할 것
+
 import sys
 from collections import defaultdict, deque
 
