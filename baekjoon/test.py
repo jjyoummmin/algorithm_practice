@@ -1,45 +1,45 @@
 import sys
-from collections import defaultdict, deque
+from collections import defaultdict
 
-def make_graph():
-  v, e, start = map(int, sys.stdin.readline().split())
-  graph = defaultdict(list)
+class Dfs:
+  def __init__(self):
+    self.make_graph()
+
+  def make_graph(self):
+    v, e, start = map(int, sys.stdin.readline().split())
+    self.v = v
+    self.e = e
+    self.start = start
+    self.visited = [0] * (v+1)
+    self.visited_order = 1
+
+    graph = defaultdict(list)
   
-  for _ in range(e):
-    a, b = map(int, sys.stdin.readline().split())
-    graph[a].append(b)
-    graph[b].append(a)
+    for _ in range(e):
+      a, b = map(int, sys.stdin.readline().split())
+      graph[a].append(b)
+      graph[b].append(a)
 
-  graph = {k: sorted(v) for k,v in graph.items()}
+    graph = {k: sorted(v) for k,v in graph.items()}
+    self.graph = graph
 
-  return v, graph, start
-
-def bfs(v, graph, start):
-  visited = [0] * (v+1)
-  queue = deque([start])
-  visited[start] = 1
-
-  visited_order = 2
-
-  while queue:
-    v = queue.popleft()
-    for w in graph[v]:
-      if visited[w]:
-        continue
-      queue.append(w)
-      visited[w] = visited_order
-      visited_order += 1
   
-  return visited[1:]
+  def iter(self, node):  
+    self.visited[node] = self.visited_order
+    self.visited_order += 1
+
+    for w in self.graph[node]:
+      if not self.visited[w]:
+        self.iter(w)
+
+  def call(self):
+    self.iter(self.start)
+    
+    for order in self.visited[1:]:
+      print(order)
+
+
+Dfs().call()
 
 
 
-
-def solve():
-  v, graph, start = make_graph()
-  visited = bfs(v, graph, start)
-
-  for order in visited:
-    print(order)
-
-solve()
