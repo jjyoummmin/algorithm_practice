@@ -14,6 +14,10 @@ def dfs(start):
   while stack:
     v = stack.pop()
 
+    # cycle이 있는 경우 때문에 확인필요
+    if visited[v]:
+      continue
+
     visited[v] = True
 
     for w in graph[v]:
