@@ -13,7 +13,3 @@ class Solution:
                 if index == length:
                   return True
         return False
-
-
-result = Solution().isSubsequence("", "ahbgdc")
-print(result)
