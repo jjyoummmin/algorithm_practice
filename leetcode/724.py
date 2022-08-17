@@ -2,7 +2,7 @@
 # 누적 합 문제
 
 class Solution:
-    def pivotIndex(self, nums: List[int]) -> int:
+    def pivotIndex(self, nums) -> int:
         # 누적합 리스트 계산
         sum = 0
         cum_sum = [0]
