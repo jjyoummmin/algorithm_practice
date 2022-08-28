@@ -1,3 +1,4 @@
+# 2D array DFS
 class Solution:
     def numIslands(self, grid) -> int:
         direction = [[0, 1], [0, -1], [-1, 0], [1, 0]]
@@ -19,6 +20,3 @@ class Solution:
                 dfs(x, y)
 
         return num_islands
-
-result = Solution().numIslands([["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]])
-print(result)
